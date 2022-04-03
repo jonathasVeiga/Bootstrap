@@ -42,3 +42,11 @@ button{
     background-color: red;
 }
 
+.container{
+    background-color: #999;
+}
+
+.container-fluid{
+    background-color: #888;
+}
+
