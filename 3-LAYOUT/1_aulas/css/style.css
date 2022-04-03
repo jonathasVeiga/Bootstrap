@@ -50,3 +50,17 @@ button{
     background-color: #888;
 }
 
+/* container breakpoint */
+
+.container-sm{
+    margin-bottom: 30px;
+    border: 2px solid blue;
+}
+
+.container-md{
+    border: 2px solid crimson;
+}
+
+.container-lg{
+    border: 2px solid chocolate;
+}
