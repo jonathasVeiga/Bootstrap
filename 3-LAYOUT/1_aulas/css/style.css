@@ -1,7 +1,44 @@
+/* xs */
 h1{
     color: red;
+}
+
+/* sm */
+@media(min-width:576px){
+    h1{
+        color: blue;
+    }
+}
+
+/* md >= 768px */
+@media(min-width:768px){
+    h1{
+        color: green;
+    }
+}
+
+/* lg >= 992px */
+@media(min-width:992px){
+    h1{
+        color:purple;
+    }
+}
+
+/* xl >= 1200px */
+@media(min-width:1200px){
+    h1{
+        color:yellow;
+    }
+}
+
+/* xxl >= 1400px */
+@media(min-width:1400px){
+    h1{
+        color:teal;
+    }
 }
 
 button{
     background-color: red;
 }
+
