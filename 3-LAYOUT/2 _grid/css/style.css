@@ -3,6 +3,7 @@
     border:5px dotted blue;
     padding: 10px;
     margin-bottom: 300px;
+    background-color: #8b8b8b;
 }
 
 .row{
@@ -24,7 +25,8 @@
 .col-4,
 .col-2,
 .col-1,
-.col-11{
+.col-11,
+.col-6{
     border:2px dashed red;
     height: 100%;
     margin: 0;
@@ -36,4 +38,19 @@
 
 #largura-limitada{
     max-width: 500px;
+}
+
+/*Alinhamento vertical*/
+
+.vertical{
+    height: 250px;
+    border-color: coral;
+}
+
+.vertical .row{
+    height: 100%;
+}
+
+.col-6{
+    height: 50px;
 }
