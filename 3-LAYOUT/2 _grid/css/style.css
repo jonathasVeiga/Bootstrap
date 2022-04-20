@@ -65,3 +65,17 @@
   height: 50px;
   border:2px solid red;
 }
+
+/*gutter*/
+#gutter .row{
+    height: 200px;
+}
+
+#gutter .col-6{
+    margin: auto;
+    height: 50px;
+}
+
+.row p {
+    border: 2px solid green;
+}
