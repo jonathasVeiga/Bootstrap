@@ -1,0 +1,14 @@
+.row{
+    border: 2px dashed blue;
+
+}
+
+.col{
+    border: 2px dashed red;
+    height: 70px;
+    margin: 5px;
+} 
+
+.col:nth-child(odd){
+    background-color: aquamarine;
+}
