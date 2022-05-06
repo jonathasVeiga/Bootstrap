@@ -1,0 +1,22 @@
+.bi.bi-apple{
+    font-size: 1rem;
+    color: #e00707;
+}
+
+.bi.bi-award{
+    font-size:2.5rem;
+    color:#dbdb0e;
+}
+
+.bi.bi-brightness-high{
+    font-size:3.5rem;
+    color:#dbab0e;
+}
+
+.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed rebeccapurple;
+    padding: 1rem;
+}
