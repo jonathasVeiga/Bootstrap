@@ -2,6 +2,7 @@
 
 *{
     color: #25282E;
+    user-select: none;
 }
 
 a,i{
@@ -31,7 +32,7 @@ a,i{
     color: #fff;
 }
 
-/*HEADER*/
+/**************************HEADER*************/
 
 #header{
     text-align: center;
@@ -53,7 +54,7 @@ a,i{
     margin-left: 15px;
 }
 
-/*NAVBAR*/
+/*******************NAVBAR**********************/
 #navbar{
     padding: 10px;
     margin: 10px auto;
@@ -68,7 +69,7 @@ a,i{
     color: #C1B696;
 }
 
-/*main image*/
+/***************main image***********************/
 
 .main-image{
     height: 400px;
