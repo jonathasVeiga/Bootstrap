@@ -124,3 +124,27 @@ a,i{
     height: 250px;
     margin-bottom:20px; /*dá o espaçamento entre a imagem e o conteudo*/
 }
+
+/************FOOTER***********/
+
+footer{
+    border-top: 1px solid #ccc;
+    height: 250px;
+    padding: 30px;
+}
+
+footer i{
+    font-size: 20px;
+}
+
+#social-icons-container{
+    padding: 25px;
+}
+
+footer p{
+    margin: 20px;
+}
+
+a:hover i{
+    color:#C1B696;
+}
