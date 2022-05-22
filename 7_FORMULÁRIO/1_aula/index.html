@@ -14,30 +14,69 @@
 <body>
     <!--Criando form-->
     <!--m = Margin-->
-    <div class="col-4 m-4">
-        <h2>Formulário de Registro</h2>
+    <div class="col-10 m-4 container-fluid">
+        <h2 class="text-center">Formulário de Registro</h2>
+         <form>
+            <!--md = Margin-bottom-->
+            <div class="mb-4">
+                <label for="email" class="form-label">E-mail:</label>
 
-        <!--md = Margin-bottom-->
-        <div class="mb-4">
-            <label for="email" class="form-label">E-mail:</label>
+                <!--aria-describedby="emailHelp" é apenas pra por uma menssagem em baixo (não usado frequentemente)-->
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Insira seu e-mail">
+                <!--id linka ao aria-describedby, e assim que se insere a menssagem-->
+                <div id="emailHelp" class="form-text">Não compartilhamos o seu endereço de e-mail</div>
+            </div>
 
-            <!--aria-describedby="emailHelp" é apenas pra por uma menssagem em baixo (não usado frequentemente)-->
-            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Insira seu e-mail">
-            <!--id linka ao aria-describedby, e assim que se insere a menssagem-->
-            <div id="emailHelp" class="form-text">Não compartilhamos o seu endereço de e-mail</div>
-        </div>
+            <div class="mb-4">
+                <label for="password" class="form-label">Senha:</label>
+                <input type="password" name="password" id="password" class="form-control" placeholder="Digite sua senha">
+            </div>
+            <div class="mb-4">
+                <!--O input não deixa colocar icones dentro do botão, então:-->
+                <!--input type="submit" value="Cadastrar" class="btn btn-primary"-->
 
-        <div class="mb-4">
-            <label for="password" class="form-label">Senha:</label>
-            <input type="password" name="password" id="password" class="form-control" placeholder="Digite sua senha">
-        </div>
-        <div class="mb-4">
-            <!--O input não deixa colocar icones dentro do botão, então:-->
-            <!--input type="submit" value="Cadastrar" class="btn btn-primary"-->
-
-            <!--Colocamos um botão com type="submit"-->
-            <button type="submit" class="btn btn-primary">Cadastrar</button>
-        </div>
+                <!--Colocamos um botão com type="submit"-->
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </div>
+        </form>
     </div>
+
+    <!----------------------Form desabilitado----------------------------------->
+
+    <hr>
+    <div class="col-10 m-4 container-fluid mt-5">
+        <h2 class="text-center">Formulário de Desabilitado</h2>
+        <form>
+            
+            <!--é usado um disabled no fildset para desabilitar
+                o form todo-->
+
+            <fieldset disabled>
+                <div class="mb-4">
+                    <label for="email" class="form-label">E-mail:</label>
+    
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Insira seu e-mail"  disabled>
+    
+                    <!--Usamos o ATRIBUTO disabled para desabilitar um campo
+                        não é muit eficaz a nivel de front(senpre usado o back)-->
+    
+                    <div id="emailHelp" class="form-text">
+                        Não compartilhamos o seu endereço de e-mail
+                    </div>
+                </div>
+    
+                <div class="mb-4">
+                    <label for="password" class="form-label">Senha:</label>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Digite sua senha">
+                </div>
+    
+                <div class="mb-4">
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+
 </body>
 </html>
