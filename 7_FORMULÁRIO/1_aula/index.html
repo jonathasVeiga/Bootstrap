@@ -47,7 +47,7 @@
     <div class="col-10 m-4 container-fluid mt-5">
         <h2 class="text-center">Formulário de Desabilitado</h2>
         <form>
-            
+
             <!--é usado um disabled no fildset para desabilitar
                 o form todo-->
 
@@ -76,6 +76,43 @@
             </fieldset>
         </form>
     </div>
+
+    <hr>
+    <!----------------------Form-control----------------------------------->
+    <!--Form-control é classe para ajustar os inputs(estilização)-->
+
+    <form class="m-4">
+        <div class="col-4">
+           <label for="title" class="form-label">Titulo do Post:</label>
+
+            <!--Form-control-*(sm,xl,md etc..) é para tornar o input responssivo
+                e o form-control em seguida é para que o input continue em baixo da label-->
+           <input type="text" id="title" class=" mb-4 form-control form-control-md" placeholder="Digite seu título">
+        </div>
+
+        <!--outro exemplo-->
+        <!--Form-control funciona como uma tag br-->
+        <div class="col-4">
+            <label for="content" class="form-label">Conteúdo</label>
+            <textarea class="form-control mb-4" placeholder="Digite o conteudo do seu post..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Enviar</button>
+    </form>
+
+    <!--Formulário responssivo-->
+
+    <form class="m-4">
+        <div class="col-4">
+           <label for="title" class="form-label">Titulo do Post:(sm)</label>
+           <input type="text" id="title" class=" mb-4 form-control form-control-sm" placeholder="Digite seu título">
+        </div>
+        <div class="col-4">
+            <label for="content" class="form-label">Conteúdo</label>
+            <textarea class="form-control form-control-sm mb-4" placeholder="Digite o conteudo do seu post..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Enviar</button>
+    </form>
+    
 
 
 </body>
