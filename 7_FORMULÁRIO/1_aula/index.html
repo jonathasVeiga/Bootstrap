@@ -19,7 +19,7 @@
 
         <!--md = Margin-bottom-->
         <div class="mb-4">
-            <label for="email" class="form-label">E-mail</label>
+            <label for="email" class="form-label">E-mail:</label>
 
             <!--aria-describedby="emailHelp" é apenas pra por uma menssagem em baixo (não usado frequentemente)-->
             <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Insira seu e-mail">
@@ -27,8 +27,16 @@
             <div id="emailHelp" class="form-text">Não compartilhamos o seu endereço de e-mail</div>
         </div>
 
-        <div class="md-4">
-            
+        <div class="mb-4">
+            <label for="password" class="form-label">Senha:</label>
+            <input type="password" name="password" id="password" class="form-control" placeholder="Digite sua senha">
+        </div>
+        <div class="mb-4">
+            <!--O input não deixa colocar icones dentro do botão, então:-->
+            <!--input type="submit" value="Cadastrar" class="btn btn-primary"-->
+
+            <!--Colocamos um botão com type="submit"-->
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
         </div>
     </div>
 </body>
