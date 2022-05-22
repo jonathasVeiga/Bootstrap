@@ -112,7 +112,40 @@
         </div>
         <button type="submit" class="btn btn-success">Enviar</button>
     </form>
+
+
     
+     <!----------------------READ ONLY----------------------------------->
+
+     <!--ATRIBUTO que indica somente leitura
+        Readonly - é uma forma de enviar os dados para o servidor, já o disable não envia-->
+    
+        <div class="col-10 m-4 container-fluid">
+            <h2 class="text-center">Formulário de Read Only</h2>
+             <form>
+                <div class="mb-4">
+                    <label for="email" class="form-label">E-mail:</label>
+                    
+                    <!--esse dado será enviado-->
+                    <input type="email" class="form-control mb-4" id="email" name="email" placeholder="Insira seu e-mail"
+                    readonly value="Jonathasveiga15@gmail.com">
+                </div>
+
+                <div class="mb-4">
+                    <label for="email" class="form-label">E-mail:</label>
+                    
+                    <!--class="form-control-plaintext" COMO READONLY deixa apenas o texto
+                        melhor forma para usuários leigos JÁ QUE ESSA FORMA NÃO DÁ A ENTENDER QUE O SISTEMA DEU BUG -->
+
+                    <input type="email" class="form-control-plaintext" id="email1" name="email" aria-describedby="emailHelp" placeholder="Insira seu e-mail"
+                    readonly value="Jonathasveiga15@gmail.com">
+                </div>
+
+                <div class="mb-4">
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </div>
+            </form>
+        </div>
 
 
 </body>
