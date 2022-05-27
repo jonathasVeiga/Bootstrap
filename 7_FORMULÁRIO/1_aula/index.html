@@ -172,14 +172,27 @@
         </div>
 
         <!-----------------OUTROS ELEMENTOS------------------------>
-        <div class="col-4 m-4">
+        <div class="col-10 m-4">
             <h2>Outros inputs</h2>
             <form>
                 <!-- DATA LIST -->
                 <label for="cidades" class="form-label">Selecione uma cidade:</label>
                 
-                <input class="form-control" list="datalistOptions" id="cidades" placeholder="Busque a sua cidade">
+                <!-- colocar o ATRIBUTO pra lincar com o  -->
+                <input class="form-control"
+                id="cidades"
+                placeholder="Busque a sua cidade"
+                list="datalistOptions">
 
+                <!-- AQUI EU LINKO O INPUT A TAG DATALIST -->
+
+                <datalist id="datalistOptions">
+                    <!-- option não precisa de fechamento -->
+                    <option value="São Paulo">
+                    <option value="Rio de Janeiro">
+                    <option value="Florianópolis">
+                    <option value="Porto alegre">
+                </datalist>
                 
 
             </form>
