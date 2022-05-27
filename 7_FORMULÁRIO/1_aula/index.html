@@ -146,7 +146,44 @@
                 </div>
             </form>
         </div>
+<!-------------------------------------INPUT DE ARQUIVOS----------------------------------->
 
+        <div class="col-10 m-4">
+            <h2>Teste de input de arquivos</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="foto" class="form-label">Apenas um arquivo</label>
+                    <input type="file" class="form-control" id="foto">
+                </div>
+
+                <!--PODE SER SELECIONADO MAIS DE UM ARQUIVO-->
+                <!--Apenas adicionamos o ATRIBUTO MULTIPLE-->
+                <div class="mb-4">
+                    <label for="fotos" class="form-label">Varios arquivos</label>
+                    <input type="file" class="form-control" id="foto" multiple>
+                </div>
+
+                <!-- INPUT FILE DESABILITADO usa-se o atributo disabled-->
+                <div class="mb-4">
+                    <label for="fotos" class="form-label">input de arquivos desabilitado</label>
+                    <input type="file" class="form-control" id="foto" disabled>
+                </div>
+            </form>
+        </div>
+
+        <!-----------------OUTROS ELEMENTOS------------------------>
+        <div class="col-4 m-4">
+            <h2>Outros inputs</h2>
+            <form>
+                <!-- DATA LIST -->
+                <label for="cidades" class="form-label">Selecione uma cidade:</label>
+                
+                <input class="form-control" list="datalistOptions" id="cidades" placeholder="Busque a sua cidade">
+
+                
+
+            </form>
+        </div>
 
 </body>
 </html>
