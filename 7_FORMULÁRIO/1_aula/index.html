@@ -195,10 +195,46 @@
                 </datalist>
                 
         <!---------------------COR------------------------------>
-                <div class="mb-4">
+                <div class="mt-4">
                     <label for="cor" class="form-label">Selecione a cor:</label>
                     <input type="color" class="form-control form-control-color" id="cor" value="#000" title="escolha uma cor">
                 </div>
+        
+        <!------------------------SELECT--------------------------->
+                
+                 <!-- SELECIONAR UMA OPÇÃO -->
+                 <div class="mt-4">
+                     <label for="opcoes" class="form-label">Selecione a sua: </label>
+                     <select name="opcoes" id="opcoes" class="form-select">
+                         <option selected>Selecione uma opção...</option>
+                         <option value="1">Primeira opção</option>
+                         <option value="2">Segunda opção</option>
+                         <option value="3">Terceira opção</option>
+                     </select>
+                 </div>
+
+                 <!-- SELECIONAR MAIS DE UMA OPÇÃO  COM CTRL + CLICK-->
+                 <div class="mt-4">
+                    <label for="opcoes" class="form-label">selecione multiplas opções: </label>
+                     <select class="form-select" multiple>
+                         <option value="1">maçã</option>
+                         <option value="2">Banana</option>
+                         <option value="3">Laranja</option>
+                     </select>
+                 </div>
+
+
+                 <!-- SELECT DESABILITADO-->
+                 <div class="mt-4">
+                    <label for="opcoes" class="form-label">SELECT DESABILITADO </label>
+                    <select name="opcoes2" id="opcoes2" class="form-select" disabled>
+                        <option selected>Selecione uma opção...</option>
+                        <option value="1">Primeira opção</option>
+                        <option value="2">Segunda opção</option>
+                        <option value="3">Terceira opção</option>
+                    </select>
+                </div>
+    
             </form>
         </div>
 
