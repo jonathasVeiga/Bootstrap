@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!--css Bootstrap-->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        
-     <!--CSS externo-->
-     <link rel="stylesheet" href="style/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--css Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!--CSS externo-->
+    <link rel="stylesheet" href="style/style.css" />
     <title>Formulários</title>
 </head>
+
 <body>
     <!--Criando form-->
     <!--m = Margin-->
     <div class="col-10 m-4 container-fluid">
         <h2 class="text-center">Formulário de Registro</h2>
-         <form>
+        <form>
             <!--md = Margin-bottom-->
             <div class="mb-4">
                 <label for="email" class="form-label">E-mail:</label>
 
                 <!--aria-describedby="emailHelp" é apenas pra por uma menssagem em baixo (não usado frequentemente)-->
-                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Insira seu e-mail">
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+                    placeholder="Insira seu e-mail" />
                 <!--id linka ao aria-describedby, e assim que se insere a menssagem-->
-                <div id="emailHelp" class="form-text">Não compartilhamos o seu endereço de e-mail</div>
+                <div id="emailHelp" class="form-text">
+                    Não compartilhamos o seu endereço de e-mail
+                </div>
             </div>
 
             <div class="mb-4">
                 <label for="password" class="form-label">Senha:</label>
-                <input type="password" name="password" id="password" class="form-control" placeholder="Digite sua senha">
+                <input type="password" name="password" id="password" class="form-control"
+                    placeholder="Digite sua senha" />
             </div>
             <div class="mb-4">
                 <!--O input não deixa colocar icones dentro do botão, então:-->
@@ -43,33 +50,34 @@
 
     <!----------------------Form desabilitado----------------------------------->
 
-    <hr>
+    <hr />
     <div class="col-10 m-4 container-fluid mt-5">
         <h2 class="text-center">Formulário de Desabilitado</h2>
         <form>
-
             <!--é usado um disabled no fildset para desabilitar
                 o form todo-->
 
             <fieldset disabled>
                 <div class="mb-4">
                     <label for="email" class="form-label">E-mail:</label>
-    
-                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Insira seu e-mail"  disabled>
-    
+
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+                        placeholder="Insira seu e-mail" disabled />
+
                     <!--Usamos o ATRIBUTO disabled para desabilitar um campo
                         não é muit eficaz a nivel de front(senpre usado o back)-->
-    
+
                     <div id="emailHelp" class="form-text">
                         Não compartilhamos o seu endereço de e-mail
                     </div>
                 </div>
-    
+
                 <div class="mb-4">
                     <label for="password" class="form-label">Senha:</label>
-                    <input type="password" name="password" id="password" class="form-control" placeholder="Digite sua senha">
+                    <input type="password" name="password" id="password" class="form-control"
+                        placeholder="Digite sua senha" />
                 </div>
-    
+
                 <div class="mb-4">
                     <button type="submit" class="btn btn-primary">Cadastrar</button>
                 </div>
@@ -77,17 +85,17 @@
         </form>
     </div>
 
-    <hr>
+    <hr />
     <!----------------------Form-control----------------------------------->
     <!--Form-control é classe para ajustar os inputs(estilização)-->
 
     <form class="m-4">
         <div class="col-4">
-           <label for="title" class="form-label">Titulo do Post:</label>
+            <label for="title" class="form-label">Titulo do Post:</label>
 
             <!--Form-control-*(sm,xl,md etc..) é para tornar o input responssivo
                 e o form-control em seguida é para que o input continue em baixo da label-->
-           <input type="text" id="title" class=" mb-4 form-control form-control-md" placeholder="Digite seu título">
+            <input type="text" id="title" class="mb-4 form-control form-control-md" placeholder="Digite seu título" />
         </div>
 
         <!--outro exemplo-->
@@ -103,140 +111,156 @@
 
     <form class="m-4">
         <div class="col-4">
-           <label for="title" class="form-label">Titulo do Post:(sm)</label>
-           <input type="text" id="title" class=" mb-4 form-control form-control-sm" placeholder="Digite seu título">
+            <label for="title" class="form-label">Titulo do Post:(sm)</label>
+            <input type="text" id="title" class="mb-4 form-control form-control-sm" placeholder="Digite seu título" />
         </div>
         <div class="col-4">
             <label for="content" class="form-label">Conteúdo</label>
-            <textarea class="form-control form-control-sm mb-4" placeholder="Digite o conteudo do seu post..."></textarea>
+            <textarea class="form-control form-control-sm mb-4"
+                placeholder="Digite o conteudo do seu post..."></textarea>
         </div>
         <button type="submit" class="btn btn-success">Enviar</button>
     </form>
 
+    <!----------------------READ ONLY----------------------------------->
 
-    
-     <!----------------------READ ONLY----------------------------------->
-
-     <!--ATRIBUTO que indica somente leitura
+    <!--ATRIBUTO que indica somente leitura
         Readonly - é uma forma de enviar os dados para o servidor, já o disable não envia-->
-    
-        <div class="col-10 m-4 container-fluid">
-            <h2 class="text-center">Formulário de Read Only</h2>
-             <form>
-                <div class="mb-4">
-                    <label for="email" class="form-label">E-mail:</label>
-                    
-                    <!--esse dado será enviado-->
-                    <input type="email" class="form-control mb-4" id="email" name="email" placeholder="Insira seu e-mail"
-                    readonly value="Jonathasveiga15@gmail.com">
-                </div>
 
-                <div class="mb-4">
-                    <label for="email" class="form-label">E-mail:</label>
-                    
-                    <!--class="form-control-plaintext" COMO READONLY deixa apenas o texto
+    <div class="col-10 m-4 container-fluid">
+        <h2 class="text-center">Formulário de Read Only</h2>
+        <form>
+            <div class="mb-4">
+                <label for="email" class="form-label">E-mail:</label>
+
+                <!--esse dado será enviado-->
+                <input type="email" class="form-control mb-4" id="email" name="email" placeholder="Insira seu e-mail"
+                    readonly value="Jonathasveiga15@gmail.com" />
+            </div>
+
+            <div class="mb-4">
+                <label for="email" class="form-label">E-mail:</label>
+
+                <!--class="form-control-plaintext" COMO READONLY deixa apenas o texto
                         melhor forma para usuários leigos JÁ QUE ESSA FORMA NÃO DÁ A ENTENDER QUE O SISTEMA DEU BUG -->
 
-                    <input type="email" class="form-control-plaintext" id="email1" name="email" aria-describedby="emailHelp" placeholder="Insira seu e-mail"
-                    readonly value="Jonathasveiga15@gmail.com">
+                <input type="email" class="form-control-plaintext" id="email1" name="email" aria-describedby="emailHelp"
+                    placeholder="Insira seu e-mail" readonly value="Jonathasveiga15@gmail.com" />
+            </div>
+
+            <div class="mb-4">
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+    <!-------------------------------------INPUT DE ARQUIVOS----------------------------------->
+
+    <div class="col-10 m-4">
+        <h2>Teste de input de arquivos</h2>
+        <form>
+            <div class="mb-4">
+                <label for="foto" class="form-label">Apenas um arquivo</label>
+                <input type="file" class="form-control" id="foto" />
+            </div>
+
+            <!--PODE SER SELECIONADO MAIS DE UM ARQUIVO-->
+            <!--Apenas adicionamos o ATRIBUTO MULTIPLE-->
+            <div class="mb-4">
+                <label for="fotos" class="form-label">Varios arquivos</label>
+                <input type="file" class="form-control" id="foto" multiple />
+            </div>
+
+            <!-- INPUT FILE DESABILITADO usa-se o atributo disabled-->
+            <div class="mb-4">
+                <label for="fotos" class="form-label">input de arquivos desabilitado</label>
+                <input type="file" class="form-control" id="foto" disabled />
+            </div>
+        </form>
+    </div>
+
+    <!-----------------OUTROS ELEMENTOS------------------------>
+    <div class="col-10 m-4">
+        <h2>Outros inputs</h2>
+        <form>
+            <!-- DATA LIST -->
+            <label for="cidades" class="form-label">Selecione uma cidade:</label>
+
+            <!-- colocar o ATRIBUTO pra lincar com o  -->
+            <input class="form-control" id="cidades" placeholder="Busque a sua cidade" list="datalistOptions" />
+
+            <!-- AQUI EU LINKO O INPUT A TAG DATALIST -->
+
+            <datalist id="datalistOptions">
+                <!-- option não precisa de fechamento -->
+                <option value="São Paulo"></option>
+                <option value="Rio de Janeiro"></option>
+                <option value="Florianópolis"></option>
+                <option value="Porto alegre"></option>
+            </datalist>
+
+            <!---------------------COR------------------------------>
+            <div class="mt-4">
+                <label for="cor" class="form-label">Selecione a cor:</label>
+                <input type="color" class="form-control form-control-color" id="cor" value="#000"
+                    title="escolha uma cor" />
+            </div>
+
+            <!------------------------SELECT--------------------------->
+
+            <!-- SELECIONAR UMA OPÇÃO -->
+            <div class="mt-4">
+                <label for="opcoes" class="form-label">Selecione a sua: </label>
+                <select name="opcoes" id="opcoes" class="form-select">
+                    <option selected>Selecione uma opção...</option>
+                    <option value="1">Primeira opção</option>
+                    <option value="2">Segunda opção</option>
+                    <option value="3">Terceira opção</option>
+                </select>
+            </div>
+
+            <!-- SELECIONAR MAIS DE UMA OPÇÃO  COM CTRL + CLICK-->
+            <div class="mt-4">
+                <label for="opcoes" class="form-label">selecione multiplas opções:
+                </label>
+                <select class="form-select" multiple>
+                    <option value="1">maçã</option>
+                    <option value="2">Banana</option>
+                    <option value="3">Laranja</option>
+                </select>
+            </div>
+
+            <!-- SELECT DESABILITADO-->
+            <div class="mt-4">
+                <label for="opcoes" class="form-label">SELECT DESABILITADO </label>
+                <select name="opcoes2" id="opcoes2" class="form-select" disabled>
+                    <option selected>Selecione uma opção...</option>
+                    <option value="1">Primeira opção</option>
+                    <option value="2">Segunda opção</option>
+                    <option value="3">Terceira opção</option>
+                </select>
+            </div>
+
+            <!-- CHECK E RADIO BUTTON-->
+
+            <div class="mt-5">
+                <h2>Marque as opções:</h2>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="privacidade" />
+                    <label for="privacidade" class="form-check-label">Aceitar termos de privacidade</label>
                 </div>
 
-                <div class="mb-4">
-                    <button type="submit" class="btn btn-primary">Cadastrar</button>
-                </div>
-            </form>
-        </div>
-<!-------------------------------------INPUT DE ARQUIVOS----------------------------------->
-
-        <div class="col-10 m-4">
-            <h2>Teste de input de arquivos</h2>
-            <form>
-                <div class="mb-4">
-                    <label for="foto" class="form-label">Apenas um arquivo</label>
-                    <input type="file" class="form-control" id="foto">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="emails" />
+                    <label for="emails" class="form-check-label">Quer receber os e-mails de propaganda?</label>
                 </div>
 
-                <!--PODE SER SELECIONADO MAIS DE UM ARQUIVO-->
-                <!--Apenas adicionamos o ATRIBUTO MULTIPLE-->
-                <div class="mb-4">
-                    <label for="fotos" class="form-label">Varios arquivos</label>
-                    <input type="file" class="form-control" id="foto" multiple>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="emails" disabled checked/>
+                    <label for="emails" class="form-check-label">Já tomei minha decisão, descupe.</label>
                 </div>
-
-                <!-- INPUT FILE DESABILITADO usa-se o atributo disabled-->
-                <div class="mb-4">
-                    <label for="fotos" class="form-label">input de arquivos desabilitado</label>
-                    <input type="file" class="form-control" id="foto" disabled>
-                </div>
-            </form>
-        </div>
-
-        <!-----------------OUTROS ELEMENTOS------------------------>
-        <div class="col-10 m-4">
-            <h2>Outros inputs</h2>
-            <form>
-                <!-- DATA LIST -->
-                <label for="cidades" class="form-label">Selecione uma cidade:</label>
-                
-                <!-- colocar o ATRIBUTO pra lincar com o  -->
-                <input class="form-control"
-                id="cidades"
-                placeholder="Busque a sua cidade"
-                list="datalistOptions">
-
-                <!-- AQUI EU LINKO O INPUT A TAG DATALIST -->
-
-                <datalist id="datalistOptions">
-                    <!-- option não precisa de fechamento -->
-                    <option value="São Paulo">
-                    <option value="Rio de Janeiro">
-                    <option value="Florianópolis">
-                    <option value="Porto alegre">
-                </datalist>
-                
-        <!---------------------COR------------------------------>
-                <div class="mt-4">
-                    <label for="cor" class="form-label">Selecione a cor:</label>
-                    <input type="color" class="form-control form-control-color" id="cor" value="#000" title="escolha uma cor">
-                </div>
-        
-        <!------------------------SELECT--------------------------->
-                
-                 <!-- SELECIONAR UMA OPÇÃO -->
-                 <div class="mt-4">
-                     <label for="opcoes" class="form-label">Selecione a sua: </label>
-                     <select name="opcoes" id="opcoes" class="form-select">
-                         <option selected>Selecione uma opção...</option>
-                         <option value="1">Primeira opção</option>
-                         <option value="2">Segunda opção</option>
-                         <option value="3">Terceira opção</option>
-                     </select>
-                 </div>
-
-                 <!-- SELECIONAR MAIS DE UMA OPÇÃO  COM CTRL + CLICK-->
-                 <div class="mt-4">
-                    <label for="opcoes" class="form-label">selecione multiplas opções: </label>
-                     <select class="form-select" multiple>
-                         <option value="1">maçã</option>
-                         <option value="2">Banana</option>
-                         <option value="3">Laranja</option>
-                     </select>
-                 </div>
-
-
-                 <!-- SELECT DESABILITADO-->
-                 <div class="mt-4">
-                    <label for="opcoes" class="form-label">SELECT DESABILITADO </label>
-                    <select name="opcoes2" id="opcoes2" class="form-select" disabled>
-                        <option selected>Selecione uma opção...</option>
-                        <option value="1">Primeira opção</option>
-                        <option value="2">Segunda opção</option>
-                        <option value="3">Terceira opção</option>
-                    </select>
-                </div>
-    
-            </form>
-        </div>
-
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>
