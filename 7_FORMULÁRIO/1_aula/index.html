@@ -240,8 +240,8 @@
                 </select>
             </div>
 
-            <!-- CHECK E RADIO BUTTON-->
-
+ <!-------------------- CHECKBOX------------------------------->
+            <!-- Pode ser selecionado mais de um -->
             <div class="mt-5">
                 <h2>Marque as opções:</h2>
                 <div class="form-check">
@@ -257,6 +257,25 @@
                 <div class="form-check">
                     <input type="checkbox" class="form-check-input" id="emails" disabled checked/>
                     <label for="emails" class="form-check-label">Já tomei minha decisão, descupe.</label>
+                </div>
+            </div>
+<!----------------------RADIO BUTTON----------------------->
+            <div class="mt-4">
+                <h2 title="escolha apenas uma opção">Oque vc quer?</h2>
+
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="meu_radio" id="a" value="a"  checked>
+                    <label for="a" class="form-check-label"> Radio checkado</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="meu_radio" id="b" value="b">
+                    <label for="b" class="form-check-label">Radio 1</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="meu_radio" id="c" value="c"  disabled>
+                    <label for="c" class="form-check-label">Radio desabilitado</label>
                 </div>
             </div>
         </form>
