@@ -330,6 +330,23 @@
                 <span class="input-group-text">,00</span>
             </div>
 
+            <!-------LABEL FLUTUANTE-------------------------->
+            <!-- deixa uma label dentro de um input -->
+            <div class="mt-4">
+                <h2>Faça o login para continuar:</h2>
+                <!-- aqui que a magica começa por ausa da classe form-floating-->
+                <div class="form-floating mt-3">
+                    <input type="email" id="email" class="form-control" placeholder="insira seu e-mail">
+                    <!-- aqui que é a cereja do bolo onde vc escreve oque vai ficar-->
+                    <label for="email">insira seu email</label>
+                </div>
+
+                <div class="form-floating mt-3">
+                    <input type="password" id="password" class="form-control" placeholder="insira sua senha">
+                    <label for="password">Insira sua senha:</label>
+                </div>
+                <input type="submit" class="btn btn-primary mt-3" >
+            </div>
         </form>
     </div>
 </body>
