@@ -10,21 +10,31 @@
     </head>
 <style>
     body{
-        background-color: #701f1f;
-        width: 100vw;
-        height: 100vh;
+        background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+        background-repeat: no-repeat;
+
         display: flex;
         align-items: center;
+        box-sizing: border-box;
+
+        user-select: none;
     }
     .formulario{
         background-color: #fff;
     }
+
+    .form-floating>.form-control:focus{
+        box-shadow: none;
+    }
+
+    
 </style>
 <body>
     <!--Aprenda a centralizar div-->
+    <!-- achar uma forma de deixar um do lado do outro -->
     <div class="container col-md-7 col-lg-5 col-xl-5 mt-5">
-        <form class="form formulario border rounded mt-5">
-            <div class="row g-3 p-4">
+        <form class="form formulario border rounded">
+            <div class="row p-4 gy-3">
                 <h1 class="fs-2 mt-5">Manage your freelance business with us!</h1>
                 <p>
                     Takes less than 10 minutes to fill out all the 
@@ -52,21 +62,44 @@
                 </div>
 
                 <div class="col-12">
-                    <button type="submit" class="btn btn-primary col-12 mt-3">Cadastrar</button>
+                    <button type="submit" class="btn btn-primary col-12 mt-3">Get started</button>
+                    <div class="form-text">by signing up you are agreeing to our</div>
+                    <div>
+                        <!-- fw=font-weight -->
+                        <a href="#" class="text-decoration-none form-text fw-bolder">Terms and Conditions</a>
+                    </div>
                 </div>
             </div>
         </form>
 
         <div class="form mt-5">
-           <form class="form formulario border rounded p-3">
-            <h2 class="h5 fw-3 mt-3 text-uppercase">Payment detail</h2>
+           <form class="form formulario border rounded p-3 gy-5">
+                <h2 class="h5 fw-3 mt-3 text-uppercase">Payment detail</h2>
 
-            <div class="row">
-                <div class="col-sm-12">
-                    <label for="nome-cartao"class="form-label">Name on card</label>
-                    <input type="text" id="nome-cartao" class="form-control">
+                <div class="row">
+                    <div class="form-floating">
+                        <input type="text" id="name-card" class="form-control border-0 border-bottom pb-0" placeholder="Digite o nome do cartão">
+                        <label for="name-card" class="form-group-label">Name on card</label>
+                    </div>
                 </div>
-            </div>
+
+                <div class="row">
+                    <div class="form-floating col-6">
+                        <input type="text" id="card-number" class="form-control border-0 border-bottom pb-0" placeholder="Digite o numero do cartão">
+                        <label for="card-number" class="form-group-label">Card number</label>
+                    </div>
+
+                    <div class="form-floating col-3">
+                        <input type="text" id="expired" class="form-control border-0 border-bottom pb-0" placeholder="Expired">
+                        <label for="expired" class="form-group-label">Expired</label>
+                    </div>
+
+                    <div class="form-floating col-3">
+                        <input type="text" id="cvv" class="form-control border-0 border-bottom" placeholder="CVV">
+                        <label for="cvv" class="form-group-label">CVV</label>
+                    </div>
+
+                </div>
            </form>
         </div>
     </div>
