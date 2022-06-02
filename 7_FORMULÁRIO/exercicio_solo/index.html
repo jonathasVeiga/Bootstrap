@@ -26,7 +26,8 @@
         background-color: #fff;
     }
 
-    .form-floating>.form-control:focus{
+    .form-floating>.form-control:focus,
+    .form-select:focus{
         box-shadow: none;
     }
 
@@ -36,6 +37,10 @@
     border: none;
     gap:.5rem;
     color:#212529;
+    }
+
+    .g-3, .gy-3 {
+    margin-top: 1.3rem;
     }
 
     label{
@@ -94,7 +99,7 @@
         </form>
 
         <div class="form mt-5">
-           <form class="form formulario border rounded-4 p-3 gy-5">
+           <form class="form formulario border rounded-4 p-3 ">
                 <h2 class="h5 fw-3 mt-3 text-uppercase">Payment detail</h2>
 
                 <div class="row">
@@ -126,6 +131,30 @@
                     </div>
 
                     <h2 class="h5 fw-3 mt-3 text-uppercase">Billing adress</h2>
+
+                    <div class="col-6 form-floating">
+                        <input id="street_address" class="form-control border-0 border-bottom" placeholder="Street address">
+                        <label for="street_address">Street address</label>
+                    </div>
+
+                    <div class="col-6 form-floating">
+                        <input id="city" class="form-control border-0 border-bottom" placeholder="City">
+                        <label for="city">City</label>
+                    </div>
+
+                    <div class="col-6 ">
+                        <select id="city" class="form-select border-0 border-bottom ps-0" placeholder="City">
+                            <option selected>State / Province</option>
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AZ">AZ</option>
+                        </select>
+                    </div>
+
+                    <div class="col-6 form-floating">
+                        <input type="text" id="code" class="form-control border-0 border-bottom" placeholder="Zip code">
+                        <label class="form-label-floating">Zip code</label>
+                    </div>
                 </div>
            </form>
         </div>
