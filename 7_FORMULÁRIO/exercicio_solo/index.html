@@ -41,12 +41,16 @@
     color:#212529;
     }
 
+    .form-select {
+    padding: 1rem .75rem;
+    }
+
 
 </style>
 <body>
     <div class="container row d-flex justify-content-center">
         <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-5">
-            <form class="form bg-white border rounded-4">
+            <form class="form bg-white border rounded-4 p-3">
                 <div class="row p-4 gy-2">
                     <h1 >Manage your freelance business with us!</h1>
                     <p>
@@ -75,7 +79,7 @@
                     </div>
     
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary col-12 mt-3">Get started</button>
+                        <button type="submit" class="btn btn-primary btn-lg col-12 mt-3">Get started</button>
                         <div class="form-text">by signing up you are agreeing to our</div>
                         <div>
                             <!-- fw=font-weight -->
@@ -87,17 +91,18 @@
         </div>
 
         <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-5">
-            <form class="form bg-white border rounded-4 p-3 ">
-                 <h2 class="h5 fw-3 mt-3 text-uppercase">Payment detail</h2>
+            <form class="form bg-white border rounded-4 p-5 ">
+                 <h2 class="h6 fw-bold text-uppercase">Payment detail</h2>
  
-                 <div class="row">
+                 <div class="row
+                 ">
                      <div class="form-floating">
                          <input type="text" id="name-card" class="form-control border-0 border-bottom pb-0 rounded-0" placeholder="Digite o nome do cartão">
                          <label for="name-card" class="form-group-label fw-3">Name on card</label>
                      </div>
                  </div>
  
-                 <div class="row">
+                 <div class="row gy-2">
                      <div class="form-floating col-6">
                          <input type="text" id="card-number" class="form-control border-0 border-bottom pb-0 fw-normal rounded-0" placeholder="Digite o numero do cartão">
                          <label for="card-number" class="form-group-label input-group-text">
@@ -118,7 +123,7 @@
                          <label for="cvv" class="form-group-label">CVV</label>
                      </div>
  
-                     <h2 class="h5 fw-3 mt-3 text-uppercase">Billing adress</h2>
+                     <h2 class="h6 fw-bold mt-5 text-uppercase">Billing adress</h2>
  
                      <div class="col-6 form-floating">
                          <input id="street_address" class="form-control border-0 border-bottom rounded-0" placeholder="Street address">
@@ -142,6 +147,16 @@
                      <div class="col-6 form-floating">
                          <input type="text" id="code" class="form-control border-0 border-bottom rounded-0" placeholder="Zip code">
                          <label class="form-label-floating">Zip code</label>
+                     </div>
+                 </div>
+
+                 <div class="row mt-5">
+                     <div class="col-md-6">
+                         <label class="form-label fw-bolder">Previous step</label>
+                     </div>
+
+                     <div class="col-md-6 d-flex justify-content-end">
+                         <button class="btn btn-primary">Pay $888</button>
                      </div>
                  </div>
             </form>
