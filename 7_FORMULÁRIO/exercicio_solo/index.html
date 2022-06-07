@@ -22,7 +22,7 @@
         align-items: center;
         justify-content: center;
         box-sizing: border-box;
-        padding: 3rem;
+        /* padding: 3rem; */
 
         font-family: 'Nunito', sans-serif;
         user-select: none;
@@ -49,14 +49,15 @@
 </style>
 <body>
     <div class="container row d-flex justify-content-center">
-        <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-5">
-            <form class="form bg-white border rounded-4 p-3">
-                <div class="row p-4 gy-2">
-                    <h1 >Manage your freelance business with us!</h1>
-                    <p>
-                        Takes less than 10 minutes to fill out all the 
-                        information needed to register your business.
-                    </p>
+            <form class="form bg-white border rounded-4 p-3 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-5">
+                <div class="row p-4 gy-3">
+                    <legend>
+                        <h1 >Manage your freelance business with us!</h1>
+                        <p>
+                            Takes less than 10 minutes to fill out all the
+                            information needed to register your business.
+                        </p>
+                    </legend>
         
                     <div class="col-sm-12">
                         <label for="email" class="form-label">Email:</label>
@@ -79,36 +80,34 @@
                     </div>
     
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary btn-lg col-12 mt-3">Get started</button>
-                        <div class="form-text">by signing up you are agreeing to our</div>
-                        <div>
-                            <!-- fw=font-weight -->
-                            <a href="#" class="text-decoration-none form-text fw-bolder">Terms and Conditions</a>
+                        <button type="submit" class="btn btn-primary btn-lg col-12 mt-3" aria-describedby=" terms">Get started</button>
+                        <div class="form-text" id="terms">by signing up you are agreeing to our
+                            <div>
+                                <!-- fw=font-weight -->
+                                <a href="#" class="text-decoration-none form-text fw-bolder">Terms and Conditions</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </form>
-        </div>
-
+        
+<!-- 
         <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-5">
             <form class="form bg-white border rounded-4 p-5 ">
                  <h2 class="h6 fw-bold text-uppercase">Payment detail</h2>
  
-                 <div class="row
-                 ">
-                     <div class="form-floating">
+                 <div class="row gy-3 border border-primary">
+                     <div class="form-floating ">
                          <input type="text" id="name-card" class="form-control border-0 border-bottom pb-0 rounded-0" placeholder="Digite o nome do cartão">
                          <label for="name-card" class="form-group-label fw-3">Name on card</label>
                      </div>
-                 </div>
- 
-                 <div class="row gy-2">
+                 
                      <div class="form-floating col-6">
                          <input type="text" id="card-number" class="form-control border-0 border-bottom pb-0 fw-normal rounded-0" placeholder="Digite o numero do cartão">
                          <label for="card-number" class="form-group-label input-group-text">
                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-credit-card-fill" viewBox="0 0 16 16">
                                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1H0V4zm0 3v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7H0zm3 2h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1z"/>
-                               </svg>
+                             </svg>
                                    Card number
                          </label>
                      </div>
@@ -123,7 +122,9 @@
                          <label for="cvv" class="form-group-label">CVV</label>
                      </div>
  
-                     <h2 class="h6 fw-bold mt-5 text-uppercase">Billing adress</h2>
+                     <legend class="col-12">
+                         <h2 class="h6 fw-bold text-uppercase">Billing adress</h2>
+                     </legend>
  
                      <div class="col-6 form-floating">
                          <input id="street_address" class="form-control border-0 border-bottom rounded-0" placeholder="Street address">
@@ -135,7 +136,7 @@
                          <label for="city">City</label>
                      </div>
  
-                     <div class="col-6 ">
+                     <div class="col-6">
                          <select id="city" class="form-select border-0 border-bottom ps-0 rounded-0" placeholder="City">
                              <option selected>State / Province</option>
                              <option value="AL">AL</option>
@@ -148,19 +149,17 @@
                          <input type="text" id="code" class="form-control border-0 border-bottom rounded-0" placeholder="Zip code">
                          <label class="form-label-floating">Zip code</label>
                      </div>
-                 </div>
-
-                 <div class="row mt-5">
-                     <div class="col-md-6">
+                    
+                     <div class="col-6">
                          <label class="form-label fw-bolder">Previous step</label>
                      </div>
 
-                     <div class="col-md-6 d-flex justify-content-end">
+                     <div class="col-6 d-flex justify-content-end">
                          <button class="btn btn-primary">Pay $888</button>
                      </div>
                  </div>
             </form>
-         </div>
+        </div> -->
 
     </div>
 </body>
