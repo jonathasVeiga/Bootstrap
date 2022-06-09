@@ -14,6 +14,10 @@ body{
     user-select: none;
 }
 
+.navbar-brand svg{
+    color:#403ef7;
+}
+
 .fs-5{
     color: #60666c;
 }
