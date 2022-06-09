@@ -28,6 +28,10 @@
         user-select: none;
     }
 
+    .fs-5{
+        color: #60666c;
+    }
+
     .form-floating>.form-control:focus,
     .form-select:focus{
         box-shadow: none;
@@ -45,6 +49,14 @@
     padding: 1rem .75rem;
     }
 
+    .btn-primary{
+        background-color: #403ef7;
+    }
+
+
+    #btnPay{
+        padding: .4rem 1.7rem;
+    }
 
 </style>
 <body>
@@ -53,8 +65,8 @@
                 <form class="form bg-white border rounded-4 p-3">
                     <div class="row p-4 gy-3">
                         <legend>
-                            <h1 >Manage your freelance business with us!</h1>
-                            <p>
+                            <h1 class="fs-2 fw-bolder">Manage your freelance business with us!</h1>
+                            <p class="fs-5">
                                 Takes less than 10 minutes to fill out all the
                                 information needed to register your business.
                             </p>
@@ -119,21 +131,21 @@
                          <label for="cvv" class="form-group-label">CVV</label>
                      </div>
  
-                     <legend class="col-12">
+                     <legend class="col-12 mt-5">
                          <h2 class="h6 fw-bold text-uppercase">Billing adress</h2>
                      </legend>
  
-                     <div class="col-12 form-floating">
+                     <div class="col-12 col-md-6 form-floating">
                          <input id="street_address" class="form-control border-0 border-bottom rounded-0" placeholder="Street address">
                          <label for="street_address">Street address</label>
                      </div>
  
-                     <div class="col-12 form-floating">
+                     <div class="col-12 col-md-6 form-floating">
                          <input id="city" class="form-control border-0 border-bottom rounded-0" placeholder="City">
                          <label for="city">City</label>
                      </div>
  
-                     <div class="col-8">
+                     <div class="col-10 col-md-6">
                          <select id="city" class="form-select border-0 border-bottom ps-0 rounded-0" placeholder="City">
                              <option selected>State / Province</option>
                              <option value="AL">AL</option>
@@ -142,18 +154,18 @@
                          </select>
                      </div>
  
-                     <div class="col-4 form-floating">
+                     <div class="col-6 col-md-6 form-floating">
                          <input type="text" id="code" class="form-control border-0 border-bottom rounded-0" placeholder="Zip code">
                          <label class="form-label-floating">Zip code</label>
                      </div>
                     
-                     <div class="row mt-4">
+                     <div class="row mt-5">
                          <div class="col-6">
                              <label class="form-label fw-bolder">Previous step</label>
                          </div>
                          
-                         <div class="col-6 justify-content-end">
-                             <button class="btn btn-primary">Pay $888</button>
+                         <div class="col-6 d-flex justify-content-end">
+                             <button class="btn btn-primary btn-sm rounded-3" id="btnPay">Pay $888</button>
                          </div>
                      </div>
                  </div>
