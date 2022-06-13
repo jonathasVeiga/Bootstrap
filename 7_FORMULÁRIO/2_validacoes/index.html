@@ -16,6 +16,36 @@
 </head>
 
 <body>
+    <!-- Validação bootstrap -->
+    <div class="container">
+        <div class="row justify-content-center m-4">
+            <div class="col-6">
+                <h2>Faça o login para continuar:</h2>
+
+                <!-- no validade - valida pelo bootstrap -->
+                <form class="row needs-validation" novalidate>
+                    <div class="col-12 mb-4">
+                        <label for="email" class="form-label">E-mail:</label>
+
+                        <!--required - O campo tem que ser requerido -->
+                        <input type="email" id="email" class="form-control" placeholder="Digite o seu e-mail" required>
+
+                        <!-- valid-feedback - menssagem que vai aparecer em baixo-->
+                        <div class="valid-feedback">Ok</div>
+                    </div>
+                    
+                    <div class="col-12 mb-4">
+                        <label for="password" class="form-label">Password:</label>
+                        <input type="password" id="password" class="form-control" placeholder="Digite a sua senha" required>
+                        <div class="valid-feedback">Ok</div>
+                    </div>
+                    <div class="col-12 mb-4">
+                        <button type="submit" class="button btn btn-primary">Entrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
 </body>
 
