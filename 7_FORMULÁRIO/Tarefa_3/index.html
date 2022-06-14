@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- IMPORTANTO O BOOTSATRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <title>Document</title>
+
+    <style>
+        body{
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- TAREFA - 03
+        1 - Crie um formulário de cadastro de produto;
+        2 - Coloque campos como: título, descrição, preço e outros que vc acahar interessante;
+        3 - Crie também uma checkbox,marcar sinaliza que o produto está em estoque;
+        4 - Crie um select para seleção de categoria;
+        5 - Insira validações se desejar;
+    -->
+
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <h2 class="text-center mb-5">Cadastro de produto</h2>
+            <form class="col-6">
+                <div class="col-12">
+                    <label for="nome-produto" class="form-label">Nome do produto</label>
+                    <input type="text" id="nome-produto" class="form-control" required>
+                </div>
+                <!-- consegui salvar o alinhamento com baseline -->
+                <div class="row align-items-baseline">
+                    <div class="col-6 mt-4">
+                        <label for="quantidade" class="form-label">Quantidade</label>
+                        <input type="text" id="quantidade" class="form-control" maxlength="3" required>
+                    </div>
+                    <div class="col-6">
+                        <label for="categoria" class="form-label">Categoria</label>
+                        <select id="categoria" class="form-select" required>
+                            <option selected>selecione o setor</option>
+                            <option value="mercearia">Mercearia</option>
+                            <option value="laticinios">Laticinios</option>
+                            <option value="padaria">Padaria</option>
+                        </select>
+                    </div>
+
+                    <div class="col-6 align-self-center mt-4">
+                        <input type="radio" id="estoque" class="form-check-input" required>
+                        <label for="estoque" class="form-check-label">Produto está em estoque ?</label>
+                    </div>
+
+                    <!-- ms - margin start auto -->
+                    <div class="col-4 mt-4 ms-auto">
+                        <label for="preco" class="form-label">Preço Un.</label>
+                        <input type="text" id="preco" class="form-control">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Entrar</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
