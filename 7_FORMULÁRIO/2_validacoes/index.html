@@ -47,6 +47,35 @@
         </div>
     </div>
 
+    <!-- Validação pelo HTML -->
+    <!-- trabalhar apenas com html as vezes deixa o sitema mais leva -->
+    <div class="container">
+        <div class="row justify-content-center m-4">
+            <div class="col-6">
+                <h2 class="mb-0">Faça o login para continuar:</h2>
+                <span class="form-text">Validação feita pelo html</span>
+
+                <form class="row">
+                    <div class="col-12 mb-4 mt-4">
+                        <label for="email" class="form-label mb-0">E-mail:</label>
+
+                        <!--required - O campo tem que ser requerido -->
+                        <input type="email" id="email" class="form-control" placeholder="Digite o seu e-mail" required>
+                    </div>
+                    
+                    <div class="col-12 mb-4">
+                        <label for="password" class="form-label">Password:</label>
+                        <!-- minlength - quantidade minima de caracteres -->
+                        <input type="password" id="password" class="form-control" placeholder="Digite a sua senha" required minlength="5">
+                    </div>
+                    <div class="col-12 mb-4">
+                        <button type="submit" class="button btn btn-primary">Entrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
