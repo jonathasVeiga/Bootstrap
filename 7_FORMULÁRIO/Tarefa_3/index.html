@@ -59,6 +59,9 @@
                     <div class="col-6 mt-4">
                         <label for="quantidade" class="form-label">Quantidade</label>
                         <input type="text" id="quantidade" class="form-control" maxlength="3" required>
+                        <div class="invalid-feedback">
+                            não dá pra cadastrar oque não tem danadinho
+                        </div>
                     </div>
                     <div class="col-6">
                         <label for="categoria" class="form-label">Categoria</label>
@@ -76,7 +79,7 @@
                     </div>
 
                     <div class="col-6 align-self-center mt-5">
-                        <input type="radio" id="estoque" class="form-check-input" required>
+                        <input type="checkbox" value="estoque" class="form-check-input" id="estoque" required>
                         <label for="estoque" class="form-check-label">Produto está em estoque ?</label>
                         <div class="invalid-feedback">
                             Por favor, me fala se ta no estoque ou não pestiado.
@@ -87,6 +90,9 @@
                     <div class="col-4 mt-4 ms-auto">
                         <label for="preco" class="form-label">Preço Un.</label>
                         <input type="text" id="preco" class="form-control" required>
+                        <div class="invalid-feedback">
+                            tá de graça?
+                        </div>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary mt-4">Entrar</button>
