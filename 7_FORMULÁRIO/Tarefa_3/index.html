@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     
     <!-- Inserindo script -->
-    <script src="js/script.js"></script>
-    
+    <script src="js/script.js" defer></script>
+
     <title>Document</title>
 
     <style>
@@ -63,22 +63,30 @@
                     <div class="col-6">
                         <label for="categoria" class="form-label">Categoria</label>
                         <select id="categoria" class="form-select" required>
-                            <option selected>selecione o setor</option>
+
+                            <!-- necessita do value, qualquer option -->
+                            <option selected disabled value="">selecione o setor</option>
                             <option value="mercearia">Mercearia</option>
                             <option value="laticinios">Laticinios</option>
                             <option value="padaria">Padaria</option>
                         </select>
+                        <div class="invalid-feedback">
+                            venho de Nárnia por acaso ?
+                        </div>
                     </div>
 
-                    <div class="col-6 align-self-center mt-4">
+                    <div class="col-6 align-self-center mt-5">
                         <input type="radio" id="estoque" class="form-check-input" required>
                         <label for="estoque" class="form-check-label">Produto está em estoque ?</label>
+                        <div class="invalid-feedback">
+                            Por favor, me fala se ta no estoque ou não pestiado.
+                        </div>
                     </div>
 
                     <!-- ms - margin start auto -->
                     <div class="col-4 mt-4 ms-auto">
                         <label for="preco" class="form-label">Preço Un.</label>
-                        <input type="text" id="preco" class="form-control">
+                        <input type="text" id="preco" class="form-control" required>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary mt-4">Entrar</button>
