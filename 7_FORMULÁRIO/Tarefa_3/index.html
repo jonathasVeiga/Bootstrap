@@ -26,14 +26,31 @@
     -->
 
 
+                    <!-- TEM QUER TER O JAVASCRIPT SE NÃO, NÃO FUNCIONA -->
+
     <div class="container mt-5">
         <div class="row justify-content-center">
             <h2 class="text-center mb-5">Cadastro de produto</h2>
-            <form class="col-6">
+
+            <!-- needs-validation - é para o bootstrap entender que ele precisa fazer uma validação aqui  -->
+            <!-- novalidate - é para desligar o feedback padrão do html 5 -->
+            <form class="col-6 needs-validation" novalidate>
                 <div class="col-12">
                     <label for="nome-produto" class="form-label">Nome do produto</label>
                     <input type="text" id="nome-produto" class="form-control" required>
+
+                    <!-- valid-feedback - menssagem que aperecerá em baixo
+                        Para campo preenchido -->
+                    <div class="valid-feedback">
+                        Nome inserido!
+                    </div>
+
+                    <!-- menssagem para campo não preenchido -->
+                    <div class="invalid-feedback">
+                        Insira um nome Lazarento >:\
+                    </div>
                 </div>
+
                 <!-- consegui salvar o alinhamento com baseline -->
                 <div class="row align-items-baseline">
                     <div class="col-6 mt-4">
@@ -61,7 +78,7 @@
                         <input type="text" id="preco" class="form-control">
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Entrar</button>
+                <button type="submit" class="btn btn-primary mt-4">Entrar</button>
             </form>
         </div>
     </div>
