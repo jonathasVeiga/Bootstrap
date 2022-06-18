@@ -60,13 +60,15 @@ body{
     color: #222;
 }
 
-.btn-primary[type="submit"]{
+#form-container input[type="submit"],
+#form-container input[type="checkbox"]:checked{
     background-color: #6c63fe;
     border-color: #6c63fe;
 }
 
 .btn.btn-primary{
     width: 100%;
+    margin-top:25px;
 }
 
 @media(min-width:768px){
