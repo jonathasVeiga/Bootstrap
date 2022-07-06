@@ -519,5 +519,52 @@
           </ul>
       </div>
     </div>
+
+    <div class="container mb-4">
+      <h3>Modal - ele é dividido em duas partes</h3>
+
+      <!-- primeira parte - botão de ação -->
+      <button type="button" 
+              class="btn btn-info"
+              data-bs-toggle="modal"
+              data-bs-target="#modal">
+              Abrir Modal
+      </button>
+
+      <!-- segunda parte - criando o modal
+          não precisa está dentro da div d botão -->
+      <div class="modal fade" 
+           id="modal" 
+           tabindex="-1" 
+           aria-labelledby="modalLabel" 
+           aria-hidden="true">
+
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- CABEÇALHO MODAL -->
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalLabel">Este é o título</h5>
+              
+              
+              <!-- data-bs-dismiss="modal" - VAI DIZER QUE ELE VAI REMOVER O MODAL  -->
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!--CORPO DO MODAL -->
+            <div class="modal-body">
+              <p>Aqui você pode qualquer coisa</p>
+              <p>Tá bom ?</p>
+            </div>
+
+            <!-- RODAPÉ DO MODAL -->
+            <div class="modal-footer">
+              <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              <button class="btn btn-success" data-bs-dismiss="modal">Salvar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
