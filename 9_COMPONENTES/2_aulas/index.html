@@ -1,101 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- IMPORTANTO O BOOTSATRAP -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- css do projeto -->
-    <link rel="stylesheet" href="css/style.css" />
+  <!-- IMPORTANTO O BOOTSATRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
 
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-      defer
-    ></script>
+  <!-- css do projeto -->
+  <link rel="stylesheet" href="css/style.css" />
 
-    <title>Componentes</title>
-  </head>
-  <body>
-    <!-- navbar 1 -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"
+    defer></script>
 
-        <!-- data-bs-toggle="collapse" = será um componente que vai collapsar
+  <title>Componentes</title>
+</head>
+
+<body>
+  <!-- navbar 1 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+
+      <!-- data-bs-toggle="collapse" = será um componente que vai collapsar
             data-bs-target="#navbarNav" = indica qual componente vai collapsar ou não   -->
-        <button type="button" 
-                class="navbar-toggler" 
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="toggle Navigation"
-                >
-                <!-- navbar-toggler-icon icone de hamburguer -->
-              <span class="navbar-toggler-icon"></span>
-          </button>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="toggle Navigation">
+        <!-- navbar-toggler-icon icone de hamburguer -->
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-          <!-- id="navbarNav" = aqui que o (data-bs-target="#navbarNav") entra em ação
+      <!-- id="navbarNav" = aqui que o (data-bs-target="#navbarNav") entra em ação
           é esse o cara a quem o target estava se referindo
           ARIA-CURRENT = FALA PRO USUÁRIO EM QUE PAGINA ELE ESTÁ(É USADO PRA DATAS E ETC)
         -->
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a href="#" class="nav-link active" aria-current="page">Home</a>
-              </li> 
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">Home</a>
+          </li>
 
-              <li class="nav-item">
-                <a href="#" class="nav-link" aria-current="page">Produtos</a>
-              </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" aria-current="page">Produtos</a>
+          </li>
 
-              <!-- role="button" = a função dele é ser um botão -->
-              <li class="nav-item dropdown">
-                <a href="#" 
-                   class="nav-link dropdown toggle" 
-                   id="navbarDropdown" 
-                   role="button"
-                   data-bs-toggle="dropdown"
-                   aria-expanded="false"
-                   >
-                  Categorias
-                  </a>
-                  <!-- aria-labelledby="navbarDropdown" 
+          <!-- role="button" = a função dele é ser um botão -->
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Categorias
+            </a>
+            <!-- aria-labelledby="navbarDropdown" 
                       linka dizendo que essa lista pertence a aquele link do dropdown -->
 
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li>
-                      <a href="#" class="dropdown-item">Cat A</a>
-                    </li>
-                    <li>
-                      <a href="#" class="dropdown-item">Cat A</a>
-                    </li>
-                     <li>
-                      <a href="#" class="dropdown-item">Cat A</a>
-                    </li>
-                  </ul>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a href="#" class="dropdown-item">Cat A</a>
               </li>
-              
-              <li class="nav-item">
-                <a href="#" class="nav-link" aria-current="page">Blog</a>
+              <li>
+                <a href="#" class="dropdown-item">Cat A</a>
               </li>
-
-              <li class="nav-item">
-                <a href="#" class="nav-link" aria-current="page">Contato</a>
+              <li>
+                <a href="#" class="dropdown-item">Cat A</a>
               </li>
             </ul>
-          </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link" aria-current="page">Blog</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link" aria-current="page">Contato</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-  </body>
+    </div>
+  </nav>
+
+  <!-- NAVBAR 2 -->
+
+  <!--esse é o navonde vai o menu nele -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav2"
+        aria-controls="navbarNav2" aria-expanded="false" aria-label="toggle Navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- aqui é o menu  -->
+      <div class="collapse navbar-collapse" id="navbarNav2">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">link1</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link active">link2</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link active">link3</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <form class="d-flex">
+        <input type="search" 
+        class="form-control me-2" 
+        placeholder="Pesquisar" 
+        aria-label="search">
+        <button type="submit" class="btn btn-outline-secondary">Pesquisar</button>
+      </form>
+    </div>
+  </nav>
+
+
+</body>
+
 </html>
