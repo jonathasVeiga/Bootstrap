@@ -120,7 +120,38 @@
     </div>
   </nav>
 
+<!-- OffCanva - parecido com um modal, um balãozinho de confirmação-->
 
+  <div class="container m-4">
+    <button type="button" 
+            class="btn btn-primary" 
+            data-bs-toggle="offcanvas" 
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">Abrir carrinho</button>
+
+    <div class="offcanvas offcanvas-end" 
+         tabindex="-1" 
+         id="offcanvasRight"
+         aria-labelledby="offcanvasLabel">
+
+         <div class="offcanvas-header">
+            <h5 id="offcanvasLabel">Carrinho</h5>
+            <button type="button" 
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close">
+            </button>
+         </div>
+
+         <div class="offcanvas-body">
+            <ul>
+              <li>Produto 1</li>
+              <li>Produto 2</li>
+              <li>Produto 3</li>
+            </ul>
+         </div>
+    </div>
+  </div>
 </body>
 
 </html>
