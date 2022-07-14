@@ -6,3 +6,7 @@ body{
 .card{
     width: 300px;
 }
+
+.progress-bar{
+    width: 25%;
+}
