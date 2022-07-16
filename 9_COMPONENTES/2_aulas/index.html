@@ -241,7 +241,7 @@
       </div>
   </div>
 
-  <!-- Scroll spy -->
+  <!-- Scroll spy = scroll suave -->
     <nav id="scrollspy" class="navbar navbar-light bg-ligth px-3 mb-4">
         <a href="#" class="navbar-brand">Minha marca</a>
         <ul class="nav">
@@ -292,8 +292,22 @@
         consectetur adipisicing elit. 
         Excepturi, blanditiis?
       </p>
-      
-      
+    </div>
+
+    <!-- toast -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index:11">
+      <div id="liveToast" class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+        <header class="toast-header">
+          <!-- me-auto = margin automatica -->
+            <strong class="me-auto">Sistema</strong>
+            <small>11 minutos atrás</small>
+          <!-- data-bs-dismiss = diz oque ele vai tirar, no cado o tost -->
+            <button class="btn-close" type="button" data-bs-dismiss="toast" aria-label="Close"></button>
+        </header>
+        <div class="toast-body">
+          <span>Esta é a menssagem do sistema</span>
+        </div>
+      </div>
     </div>
 </body>
 
