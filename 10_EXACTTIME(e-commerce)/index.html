@@ -31,7 +31,51 @@
     </head>
 
 <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expanded-lg primary-bg-color py-4 px-2" id="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">ExactTime</a><!--Logo -->
+            <div class="navbar-item">
+            <!--Essa div está vazia pq o bs não reconhece o link como container (tentar mudar o display dele para block para ver o comportamento)-->
+                <div></div>
+                <form class="d-flex" id="search-form">
+                    <i class="bi bi-search primary-color"></i>
+                    <input type="search" class="form-control me-2" placeholder="Busque o seu relogio..." aria-label="search">
+                    <button type="submit" class="btn secondary-bg-color">Pesquisar</button>
+                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-person"></i>
+                        </a>
+                    </li>
 
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-heart"></i>
+                        </a>
+                        <span class="qty-info">5</span>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-person"></i>
+                            <b>R$1299,00</b>
+                        </a>
+                        <span class="qty-info">8</span>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-person"></i>
+                        </a>
+                        <span class="qty-info">8</span>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
 </body>
 
 </html>
