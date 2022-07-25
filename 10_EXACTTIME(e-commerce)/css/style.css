@@ -59,3 +59,23 @@ body{
     border-radius: 50%;
     font-size: .6rem;
 }
+
+#search-form{
+    border: 2px solid #626262;
+    border-radius: 3px;
+    padding:5px 15px;
+}
+
+#search-form input{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+#search-form input:focus{
+    box-shadow: none;
+}
+
+#search-form input::placeholder{
+    color: #fff;
+}
