@@ -97,7 +97,7 @@ body{
         order: 2;
     } 
      
-    .navbar-nav li:first-child a{
+   #top-navbar li:first-child a{
          margin-left: 0px;
     } 
 
@@ -134,3 +134,4 @@ body{
 .container-fluid{
     padding: 0;
 }
+
