@@ -128,3 +128,9 @@ body{
 #bottom-navbar{
     justify-content: center;
 }
+
+/* BANNERS */
+
+.container-fluid{
+    padding: 0;
+}
