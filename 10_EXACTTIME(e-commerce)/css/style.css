@@ -135,3 +135,40 @@ body{
     padding: 0;
 }
 
+.carousel-item,
+.carousel-item .img-fluid{
+    height: 80vh;
+}
+
+.carousel-caption{
+    bottom: .3em;
+    padding: 1em;
+    left: 28%;
+    right:28%;
+}
+
+.carousel-caption h5{
+    font-size: 1.8em;
+}
+
+@media(max-width:768px){
+
+    .carousel-caption{
+        left: 15%;
+        right: 15%;
+    }
+    
+    .carousel-item,
+    .carousel-item .img-fluid{
+        height: 50vh;
+    }
+
+}
+
+/* @media(min-width:565px){
+    .carousel-caption{
+        left: 15%;
+        right: 15%;
+    }
+    
+} */
