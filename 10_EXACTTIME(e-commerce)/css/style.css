@@ -109,3 +109,22 @@ body{
 
 
 }
+
+/* NAVBAR INFERIOR */
+
+#bottom-navbar-container .container{
+    justify-content: flex-end;
+}
+
+#bottom-navbar-container  a{
+    font-weight: 600;
+    color: #fff;
+}
+
+.navbar-toggler{
+    font-size: 1.5em;
+}
+
+#bottom-navbar{
+    justify-content: center;
+}
