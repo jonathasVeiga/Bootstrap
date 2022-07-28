@@ -1,15 +1,6 @@
-<style>
-    h1{
-        text-align:center;
-    }
-    img{
-        display:block;
-        margin:0 auto;
-    }
-</style>
 
-<h1>Bootstrap 5</h1>
-<img src="./github/bootstrap-logo.png" width="300px">
+<h1 align="center">Bootstrap 5</h1>
+<img align="center" src="./github/bootstrap-logo.png" width="300px">
 
 ## **Descrição**
 
