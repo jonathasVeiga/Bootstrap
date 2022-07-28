@@ -173,19 +173,13 @@ body{
 
 #mini-banners .col-12{
     z-index: 1;
-    height: 300px;
+    height: 18em;
     padding:1.5em;
     position: relative;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-@media(min-width:768px){
-    #mini-banners .col-12{
-        max-width: 30%;
-    } 
 }
 
 #mini-banners .col-12 h2{
@@ -223,3 +217,44 @@ body{
     color: #101010;
 }
 
+
+@media(min-width:768px){
+
+    .container{
+        max-width: 90%;
+    }
+
+    #mini-banners .col-12{
+      height: 15em;
+      max-width: 30%;
+    } 
+
+    #mini-banners .col-12 img{
+        height: 64%;
+        position: absolute;
+        right:.5em;
+        bottom: 1em;
+    }
+    
+    #mini-banners .col-12 h2{
+       font-size: 1.5em;
+    }
+}
+
+@media(min-width:858px){
+    #mini-banners .col-12 img{
+        height: 70%;
+    }
+} 
+
+@media(min-width:877px){
+    #mini-banners .col-12 img{
+        height:75%;
+    }
+} 
+
+@media(min-width:998px){
+    #mini-banners .col-12 img{
+        height: 89%;
+    }
+} 
