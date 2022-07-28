@@ -1,6 +1,9 @@
 
-<h1 align="center">Bootstrap 5</h1>
-<img align="center" src="./github/bootstrap-logo.png" width="300px">
+
+<div align="center">
+    <h1>Bootstrap 5</h1>
+    <img src="./github/bootstrap-logo.png" width="300px">
+</div>
 
 ## **Descrição**
 
