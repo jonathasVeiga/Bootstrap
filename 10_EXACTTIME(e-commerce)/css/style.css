@@ -151,11 +151,12 @@ body{
     font-size: 1.8em;
 }
 
-@media(max-width:768px){
+@media(min-width:768px){
 
     .carousel-caption{
-        left: 15%;
-        right: 15%;
+        left: 26%;
+        right: 26%;
+        bottom: 3.4em;
     }
     
     .carousel-item,
@@ -164,6 +165,18 @@ body{
     }
 
 }
+
+@media(max-width:375px){
+
+    .carousel-caption{
+        left: 15%;
+        right: 15%;
+        bottom: 3.4em;
+    }
+
+}
+
+
 
 /* MINI BANNERS */
 #mini-banners{
@@ -175,6 +188,7 @@ body{
     z-index: 1;
     height: 18em;
     padding:1.5em;
+    /* top: -27px; */
     position: relative;
 
     display: flex;
@@ -227,6 +241,7 @@ body{
     #mini-banners .col-12{
       height: 15em;
       max-width: 30%;
+      top: -27px;
     } 
 
     #mini-banners .col-12 img{
