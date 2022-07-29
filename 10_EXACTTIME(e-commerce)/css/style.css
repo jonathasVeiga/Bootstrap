@@ -277,3 +277,46 @@ body{
         height: 89%;
     }
 } 
+
+/* BEST SELLERS */
+#best-sellers{
+    padding: 4em 0;
+}
+
+#best-sellers .row{
+    margin: 0;
+}
+
+#best-sellers .col-md-3{
+    padding: 0;
+}
+
+.title{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+@media(min-width:768px){
+    .title{
+        text-align: left;
+    }
+}
+
+.card{
+    text-align: center;
+    border-radius: 0;
+}
+
+.card img{
+    width: 8em;
+    margin: 2em auto;
+}
+
+.card .card-category{
+    font-size: .8em;
+}
+
+
+
