@@ -318,5 +318,19 @@ body{
     font-size: .8em;
 }
 
+.card .card-text{
+    margin: 2em 0;
+}
+
+.btn-outline-primary{
+    border-color: #c09578;
+    color: #fff;
+}
+
+.btn-outline-primary:hover{
+    border-color: #c09578;
+    background-color: #c09578;
+    color: #fff;
+}
 
 
