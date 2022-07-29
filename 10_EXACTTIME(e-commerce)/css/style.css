@@ -140,6 +140,10 @@ body{
     height: 80vh;
 }
 
+.carousel-item .img-fluid{
+    object-fit: cover;
+}
+
 .carousel-caption{
     bottom: .3em;
     padding: 1em;
